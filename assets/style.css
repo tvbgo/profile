@@ -33,6 +33,7 @@ a {
   padding-bottom: 25px;
   font-family: Montserrat, serif ;
   text-shadow: 1px 1px 2px;
+  color: rgba(54, 56, 46, 1);
 
 }
 .btn_style {
@@ -62,7 +63,7 @@ a {
 
 }
 .fab {
-  color: black;
+  color: rgba(54, 56, 46, 1);
   font-size: 40px;
   text-align: center;
   transition: 0.4s;
@@ -70,7 +71,7 @@ a {
 
 }
 .fas {
-  color: black;
+  color: rgba(54, 56, 46, 1);
   font-size: 40px;
   text-align: center;
   transition: 0.4s;
