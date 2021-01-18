@@ -6,17 +6,34 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
   </head>
 
   <body>
     <div class="container">
+      <div class="banner">
+        <h1 id="hello-text">
+          <script  type="text/javascript">
+            const loadDynamicBannerText = () => {
+              const banner = document.querySelector('#hello-text');
+              if (banner) {
+                new Typed('#hello-text', {
+                  strings: ["Hello World!", "Hello World!", "My name is Tomas!", "Welcome to my profile!"],
+                  typeSpeed: 70,
+                  loop: false
+                });
+              }
+            }
+            loadDynamicBannerText();
+          </script>
+        </h1>
+      </div>
       <div class="card-white">
-        <h1>Hello, I'm Tomás !</h1>
 
         <img class="img_rounded" src="assets/images/pic.jpg" alt="Humm.. I guess there should be a picture of me here...">
 
-        <p>After 10 years with my first love, Hotels and Hospitality, decided to pursue a new passion in programming.
-          <br>Currently in a non-exclusive relationship with Ruby and flirting with HTML and CSS.</p>
+        <p class="github-bio"></p>
 
          <a class="btn_style" href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">Click and Discover something new!</a>
       </div>
@@ -55,5 +72,6 @@
         </ul>
       </div>
     </div>
+     <script src="./assets/index.js"></script>
   </body>
 </html>

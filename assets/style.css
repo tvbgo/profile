@@ -10,10 +10,15 @@ a {
 .container {
   width: 400px;
   margin: 0 auto;
-  background-image: url('https://picsum.photos/400?blur');
   padding: 5px;
   font-family: Open sans, sans-serif;
 
+}
+.banner {
+  margin: 0 auto;
+  height: 150px;
+  text-align: center;
+  text-shadow: 1px 1px;
 }
 .card-white {
   background-color: rgba(245, 245, 245, 0.9);
