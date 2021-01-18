@@ -17,7 +17,7 @@ a {
 }
 .banner {
   margin: 50px auto;
-  height: 150px;
+  height: 30%;
   text-align: center;
   text-shadow: 0px 0px 3px rgba(116, 165, 127, 1);
   font-size: 45px;
@@ -84,4 +84,43 @@ a {
 
 .fas:hover {
   background-color: rgba(34, 74, 155, 0.3);
+}
+
+
+@media screen and (max-width: 320px) {
+  body {
+    width: 100%;
+  }
+  .banner {
+    font-size: 20px;
+    width: 75%;
+    height: 200px;
+    margin: 20px auto;
+  }
+  .card-white {
+    width: 85%;
+    margin: 20px auto;
+  }
+  .list-inline {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  body {
+    width: 100%;
+  }
+  .banner {
+    font-size: 20px;
+    width: 65%;
+    height: 200px;
+    margin: 20px auto;
+  }
+  .card-white {
+    width: 75%;
+    margin: 20px auto;
+  }
+  .list-inline {
+    flex-wrap: wrap;
+  }
 }
