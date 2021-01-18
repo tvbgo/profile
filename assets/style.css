@@ -8,27 +8,29 @@ a {
 }
 
 .container {
-  width: 400px;
+  width: 100%;
   margin: 0 auto;
   padding: 5px;
   font-family: Open sans, sans-serif;
+  background: linear-gradient(-70deg, #EDE6E3 50%, #74A57F 50%);
 
 }
 .banner {
   margin: 0 auto;
-  height: 150px;
+  height: 50px;
   text-align: center;
-  text-shadow: 1px 1px;
+  text-shadow: 1px 1px 2px;
 }
 .card-white {
   background-color: rgba(245, 245, 245, 0.9);
   text-align: center;
-  border: 1px solid rgba(180, 180, 180, 0.6);
-  width: 320px;
-  margin: 20px auto;
+  box-shadow: 2px 2px 2px 1px rgba(180, 180, 180, 0.6), 2px 4px 4px 2px rgba(180, 180, 180, 0.8);
+  width: 50%;
+  margin: 10px auto;
   padding: 15px;
   padding-bottom: 25px;
   font-family: Montserrat, serif ;
+  text-shadow: 1px 1px 2px;
 
 }
 .btn_style {
@@ -36,8 +38,8 @@ a {
   background-color: rgba(200, 200, 200, 0.6);
   border-radius: 4px;
   padding: 10px;
-  box-shadow: 1px, 2px, 2px, 1px
-  margin-bottom: 20px
+  box-shadow: 1px, 2px, 2px, 1px;
+  margin-bottom: 20px;
 }
 .btn_style:hover {
   background-color: rgba(34, 74, 155, 0.3);
@@ -45,34 +47,38 @@ a {
 }
 .img_rounded {
   border-radius: 50%;
-  height: 180px;
-  width: 150px;
+  height: 200px;
 }
 
 .list-inline {
   list-style: none;
   margin: 0 auto;
   display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+  font-size: 60px;
 
 }
 .fab {
+  color: black;
   font-size: 40px;
-  margin-left: 25px;
   text-align: center;
   transition: 0.4s;
+  padding: 5px;
 
 }
 .fas {
+  color: black;
   font-size: 40px;
-  margin-left: 25px;
   text-align: center;
   transition: 0.4s;
+  padding: 5px;
 }
 
 .fab:hover {
-  background-color: rgba(89, 74, 38, 0.5);
+  background-color: rgba(34, 74, 155, 0.3);
 }
 
 .fas:hover {
-  background-color: rgba(89, 74, 38, 0.5);
+  background-color: rgba(34, 74, 155, 0.3);
 }
