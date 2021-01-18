@@ -88,8 +88,9 @@ a {
 
 
 @media screen and (max-width: 320px) {
-  body {
-    width: 100%;
+  .container {
+    padding: 0;
+    margin: 0;
   }
   .banner {
     font-size: 20px;
@@ -107,8 +108,9 @@ a {
 }
 
 @media screen and (max-width: 620px) {
-  body {
-    width: 100%;
+  .container {
+    padding: 0;
+    margin: 0;
   }
   .banner {
     font-size: 20px;
