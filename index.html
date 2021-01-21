@@ -3,47 +3,27 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="assets/style.css">
+    <!-- import CSS for Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!-- import CSS for Developer Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.8.2/devicon.min.css">
+    <!-- import CSS for Fade-in/out-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-
     <title>Tomas Gomes</title>
-
-
 
   </head>
 
   <body>
     <div class="container">
       <div class="banner">
-        <h1 id="hello-text">
-          <script  type="text/javascript">
-            const loadDynamicBannerText = () => {
-              const banner = document.querySelector('#hello-text');
-              if (banner) {
-                new Typed('#hello-text', {
-                  strings: ["Hello World!", "Hello World!", "My name is Tomas!", "Welcome to my profile!"],
-                  typeSpeed: 70,
-                  loop: true,
-                  loopCount: 2,
-                  showCursor: false
-                });
-              }
-            }
-            loadDynamicBannerText();
-          </script>
-        </h1>
+        <h1 id="hello-text"></h1>
       </div>
+
       <div class="card-white" data-aos="zoom-out">
-
         <img class="img_rounded" src="https://avatars0.githubusercontent.com/u/68977332?v=4" alt="Humm.. I guess there should be a picture of me here...">
-
         <p class="github-bio"></p>
-
       </div>
 
 
@@ -104,10 +84,31 @@
         </ul>
       </div>
     </div>
-      <script src="./assets/index.js"></script>
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
+
+    <!-- getBio() and  dynamicBannerText() -->
+    <script src="./assets/index.js"></script>
+
+    <!-- TYPED JS library-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script type="text/javascript">
+      const dynamicBannerText = () => {
+        const banner = document.querySelectorAll('#hello-text');
+        if (banner) {
+          new Typed('#hello-text', {
+            strings: ["Hello World!", "Hello World!", "My name is Tomas!", "Welcome to my profile!"],
+            typeSpeed: 70,
+            loop: true,
+            loopCount: 2,
+            showCursor: false
+          });
+        }
+      }
+      dynamicBannerText();
+    </script>
+    <!-- Fade-in/out AOS JS library-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
