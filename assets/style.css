@@ -24,28 +24,14 @@ a {
   color: rgba(54, 56, 46, 1);
 }
 .card-white {
-  background-color: rgba(237, 230, 227, 0.9);
+  background-color: rgb(237, 230, 227);
   text-align: center;
   box-shadow: 2px 2px 2px 1px rgba(180, 180, 180, 0.6), 2px 4px 4px 2px rgba(180, 180, 180, 0.8);
-  width: 50%;
+  width: 300px;
   margin: 50px auto;
   padding: 15px;
-  padding-bottom: 25px;
   font-family: Montserrat, serif ;
-  text-shadow: 1px 1px 2px;
   color: rgba(54, 56, 46, 1);
-
-}
-.btn_style {
-  text-decoration: none;
-  background-color: rgba(200, 200, 200, 0.6);
-  border-radius: 4px;
-  padding: 10px;
-  box-shadow: 1px, 2px, 2px, 1px;
-  margin-bottom: 20px;
-}
-.btn_style:hover {
-  background-color: rgba(34, 74, 155, 0.3);
 
 }
 .img_rounded {
@@ -56,11 +42,20 @@ a {
 .list-inline {
   list-style: none;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 6px;
   font-size: 60px;
-
+  padding: 0;
+}
+.anchor-list-inline {
+  list-style: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 6px;
+  font-size: 60px;
+  padding: 0;
 }
 .fab {
   color: rgba(54, 56, 46, 1);
@@ -68,6 +63,7 @@ a {
   text-align: center;
   transition: 0.4s;
   padding: 5px;
+  align-self: end;
 
 }
 .fas {
@@ -76,6 +72,7 @@ a {
   text-align: center;
   transition: 0.4s;
   padding: 5px;
+  align-self: end;
 }
 
 .fab:hover {
@@ -102,9 +99,6 @@ a {
     width: 85%;
     margin: 20px auto;
   }
-  .list-inline {
-    flex-wrap: wrap;
-  }
 }
 
 @media screen and (max-width: 620px) {
@@ -121,8 +115,5 @@ a {
   .card-white {
     width: 75%;
     margin: 20px auto;
-  }
-  .list-inline {
-    flex-wrap: wrap;
   }
 }
