@@ -1,0 +1,33 @@
+{
+  "name": "profile",
+  "version": "1.0.0",
+  "description": "\"Personal profile page\"",
+  "main": "index.js",
+  "dependencies": {
+    "typed.js": "^2.0.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "path": "^0.12.7",
+    "webpack": "^5.18.0",
+    "webpack-cli": "^4.4.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvbgo/profile.git"
+  },
+  "author": "tvbgo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvbgo/profile/issues"
+  },
+  "scripts": {
+    "dev": "webpack --watch --mode=development",
+    "prod": "webpack --mode=production"
+  },
+  "homepage": "https://github.com/tvbgo/profile#readme"
+}
